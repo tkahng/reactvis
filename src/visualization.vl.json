@@ -1,0 +1,611 @@
+{
+  "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
+  "hconcat": [
+    {
+      "layer": [
+        {
+          "mark": "circle",
+          "encoding": {
+            "color": {
+              "condition": {
+                "type": "nominal",
+                "field": "brd_name_kor",
+                "legend": null,
+                "selection": "selector034"
+              },
+              "value": "lightgray"
+            },
+            "opacity": {"value": 0},
+            "tooltip": {"type": "nominal", "field": "brd_name_kor"},
+            "x": {"type": "temporal", "field": "lv_registerdate"},
+            "y": {"type": "quantitative", "field": "views"}
+          },
+          "selection": {
+            "selector035": {
+              "type": "single",
+              "empty": "all",
+              "on": "mouseover",
+              "fields": ["brd_name_kor"],
+              "nearest": true
+            }
+          },
+          "width": 600
+        },
+        {
+          "mark": "line",
+          "encoding": {
+            "color": {
+              "condition": {
+                "type": "nominal",
+                "field": "brd_name_kor",
+                "legend": null,
+                "selection": "selector034"
+              },
+              "value": "lightgray"
+            },
+            "size": {
+              "condition": {"value": 1, "selection": {"not": "selector034"}},
+              "value": 3
+            },
+            "tooltip": {"type": "nominal", "field": "brd_name_kor"},
+            "x": {"type": "temporal", "field": "lv_registerdate"},
+            "y": {"type": "quantitative", "field": "views"}
+          }
+        }
+      ]
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "color": {
+          "condition": {
+            "type": "nominal",
+            "field": "brd_name_kor",
+            "legend": null,
+            "selection": "selector034"
+          },
+          "value": "lightgray"
+        },
+        "y": {
+          "type": "nominal",
+          "axis": {"orient": "right"},
+          "field": "brd_name_kor"
+        }
+      },
+      "selection": {
+        "selector034": {"type": "multi", "fields": ["brd_name_kor"]}
+      }
+    }
+  ],
+  "data": {"name": "data-8f0059a14dcd2cfa8d9e081e02bdafcb"},
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json",
+  "datasets": {
+    "data-8f0059a14dcd2cfa8d9e081e02bdafcb": [
+      {
+        "brd_name_kor": "KCC페인트",
+        "lv_registerdate": "2021-01-07T00:00:00",
+        "views": 26
+      },
+      {
+        "brd_name_kor": "KCC페인트",
+        "lv_registerdate": "2021-01-08T00:00:00",
+        "views": 23
+      },
+      {
+        "brd_name_kor": "KCC페인트",
+        "lv_registerdate": "2021-01-11T00:00:00",
+        "views": 30
+      },
+      {
+        "brd_name_kor": "경도",
+        "lv_registerdate": "2020-12-21T00:00:00",
+        "views": 16
+      },
+      {
+        "brd_name_kor": "경도",
+        "lv_registerdate": "2020-12-22T00:00:00",
+        "views": 15
+      },
+      {
+        "brd_name_kor": "경도",
+        "lv_registerdate": "2020-12-23T00:00:00",
+        "views": 11
+      },
+      {
+        "brd_name_kor": "경도",
+        "lv_registerdate": "2021-01-02T00:00:00",
+        "views": 11
+      },
+      {
+        "brd_name_kor": "경도",
+        "lv_registerdate": "2021-01-04T00:00:00",
+        "views": 16
+      },
+      {
+        "brd_name_kor": "경도",
+        "lv_registerdate": "2021-01-06T00:00:00",
+        "views": 13
+      },
+      {
+        "brd_name_kor": "경도",
+        "lv_registerdate": "2021-01-07T00:00:00",
+        "views": 12
+      },
+      {
+        "brd_name_kor": "경도",
+        "lv_registerdate": "2021-01-11T00:00:00",
+        "views": 16
+      },
+      {
+        "brd_name_kor": "글라스원",
+        "lv_registerdate": "2020-12-22T00:00:00",
+        "views": 12
+      },
+      {
+        "brd_name_kor": "글라스원",
+        "lv_registerdate": "2020-12-23T00:00:00",
+        "views": 12
+      },
+      {
+        "brd_name_kor": "글라스코",
+        "lv_registerdate": "2020-12-23T00:00:00",
+        "views": 13
+      },
+      {
+        "brd_name_kor": "글라스코",
+        "lv_registerdate": "2021-01-05T00:00:00",
+        "views": 13
+      },
+      {
+        "brd_name_kor": "녹수",
+        "lv_registerdate": "2020-12-24T00:00:00",
+        "views": 17
+      },
+      {
+        "brd_name_kor": "녹수",
+        "lv_registerdate": "2021-01-08T00:00:00",
+        "views": 19
+      },
+      {
+        "brd_name_kor": "녹수",
+        "lv_registerdate": "2021-01-11T00:00:00",
+        "views": 12
+      },
+      {
+        "brd_name_kor": "대보",
+        "lv_registerdate": "2020-12-22T00:00:00",
+        "views": 23
+      },
+      {
+        "brd_name_kor": "대보",
+        "lv_registerdate": "2020-12-24T00:00:00",
+        "views": 16
+      },
+      {
+        "brd_name_kor": "대보",
+        "lv_registerdate": "2020-12-25T00:00:00",
+        "views": 17
+      },
+      {
+        "brd_name_kor": "대보",
+        "lv_registerdate": "2020-12-28T00:00:00",
+        "views": 25
+      },
+      {
+        "brd_name_kor": "대보",
+        "lv_registerdate": "2020-12-29T00:00:00",
+        "views": 11
+      },
+      {
+        "brd_name_kor": "대보",
+        "lv_registerdate": "2020-12-30T00:00:00",
+        "views": 36
+      },
+      {
+        "brd_name_kor": "대보",
+        "lv_registerdate": "2020-12-31T00:00:00",
+        "views": 21
+      },
+      {
+        "brd_name_kor": "대보",
+        "lv_registerdate": "2021-01-03T00:00:00",
+        "views": 19
+      },
+      {
+        "brd_name_kor": "대보",
+        "lv_registerdate": "2021-01-04T00:00:00",
+        "views": 51
+      },
+      {
+        "brd_name_kor": "대보",
+        "lv_registerdate": "2021-01-05T00:00:00",
+        "views": 32
+      },
+      {
+        "brd_name_kor": "대보",
+        "lv_registerdate": "2021-01-06T00:00:00",
+        "views": 20
+      },
+      {
+        "brd_name_kor": "대보",
+        "lv_registerdate": "2021-01-07T00:00:00",
+        "views": 13
+      },
+      {
+        "brd_name_kor": "대보",
+        "lv_registerdate": "2021-01-08T00:00:00",
+        "views": 22
+      },
+      {
+        "brd_name_kor": "대보",
+        "lv_registerdate": "2021-01-09T00:00:00",
+        "views": 22
+      },
+      {
+        "brd_name_kor": "대보",
+        "lv_registerdate": "2021-01-11T00:00:00",
+        "views": 15
+      },
+      {
+        "brd_name_kor": "두라스택",
+        "lv_registerdate": "2021-01-08T00:00:00",
+        "views": 20
+      },
+      {
+        "brd_name_kor": "두인폴리캠",
+        "lv_registerdate": "2020-12-28T00:00:00",
+        "views": 11
+      },
+      {
+        "brd_name_kor": "두인폴리캠",
+        "lv_registerdate": "2020-12-30T00:00:00",
+        "views": 11
+      },
+      {
+        "brd_name_kor": "두인폴리캠",
+        "lv_registerdate": "2021-01-01T00:00:00",
+        "views": 12
+      },
+      {
+        "brd_name_kor": "두인폴리캠",
+        "lv_registerdate": "2021-01-03T00:00:00",
+        "views": 13
+      },
+      {
+        "brd_name_kor": "두인폴리캠",
+        "lv_registerdate": "2021-01-04T00:00:00",
+        "views": 11
+      },
+      {
+        "brd_name_kor": "두인폴리캠",
+        "lv_registerdate": "2021-01-08T00:00:00",
+        "views": 14
+      },
+      {
+        "brd_name_kor": "두인폴리캠",
+        "lv_registerdate": "2021-01-09T00:00:00",
+        "views": 16
+      },
+      {
+        "brd_name_kor": "두인폴리캠",
+        "lv_registerdate": "2021-01-11T00:00:00",
+        "views": 11
+      },
+      {
+        "brd_name_kor": "래디언스",
+        "lv_registerdate": "2020-12-23T00:00:00",
+        "views": 13
+      },
+      {
+        "brd_name_kor": "르플로",
+        "lv_registerdate": "2021-01-04T00:00:00",
+        "views": 18
+      },
+      {
+        "brd_name_kor": "르플로",
+        "lv_registerdate": "2021-01-09T00:00:00",
+        "views": 14
+      },
+      {
+        "brd_name_kor": "르플로",
+        "lv_registerdate": "2021-01-11T00:00:00",
+        "views": 19
+      },
+      {
+        "brd_name_kor": "마이크로",
+        "lv_registerdate": "2021-01-08T00:00:00",
+        "views": 11
+      },
+      {
+        "brd_name_kor": "메라톤",
+        "lv_registerdate": "2020-12-25T00:00:00",
+        "views": 22
+      },
+      {
+        "brd_name_kor": "밀리켄",
+        "lv_registerdate": "2020-12-21T00:00:00",
+        "views": 11
+      },
+      {
+        "brd_name_kor": "밀리켄",
+        "lv_registerdate": "2020-12-22T00:00:00",
+        "views": 11
+      },
+      {
+        "brd_name_kor": "밀리켄",
+        "lv_registerdate": "2020-12-28T00:00:00",
+        "views": 37
+      },
+      {
+        "brd_name_kor": "베리칼체",
+        "lv_registerdate": "2020-12-22T00:00:00",
+        "views": 18
+      },
+      {
+        "brd_name_kor": "베리칼체",
+        "lv_registerdate": "2020-12-25T00:00:00",
+        "views": 18
+      },
+      {
+        "brd_name_kor": "베리칼체",
+        "lv_registerdate": "2021-01-04T00:00:00",
+        "views": 11
+      },
+      {
+        "brd_name_kor": "베리칼체",
+        "lv_registerdate": "2021-01-11T00:00:00",
+        "views": 13
+      },
+      {
+        "brd_name_kor": "베트라조",
+        "lv_registerdate": "2020-12-30T00:00:00",
+        "views": 13
+      },
+      {
+        "brd_name_kor": "베트라조",
+        "lv_registerdate": "2020-12-31T00:00:00",
+        "views": 16
+      },
+      {
+        "brd_name_kor": "베트라조",
+        "lv_registerdate": "2021-01-08T00:00:00",
+        "views": 12
+      },
+      {
+        "brd_name_kor": "베트라조",
+        "lv_registerdate": "2021-01-10T00:00:00",
+        "views": 14
+      },
+      {
+        "brd_name_kor": "블루스타일",
+        "lv_registerdate": "2020-12-25T00:00:00",
+        "views": 13
+      },
+      {
+        "brd_name_kor": "블루스타일",
+        "lv_registerdate": "2021-01-02T00:00:00",
+        "views": 13
+      },
+      {
+        "brd_name_kor": "스타론",
+        "lv_registerdate": "2020-12-27T00:00:00",
+        "views": 13
+      },
+      {
+        "brd_name_kor": "스타론",
+        "lv_registerdate": "2020-12-30T00:00:00",
+        "views": 15
+      },
+      {
+        "brd_name_kor": "스타론",
+        "lv_registerdate": "2021-01-11T00:00:00",
+        "views": 14
+      },
+      {
+        "brd_name_kor": "신한벽지",
+        "lv_registerdate": "2021-01-05T00:00:00",
+        "views": 13
+      },
+      {
+        "brd_name_kor": "오이코스",
+        "lv_registerdate": "2020-12-22T00:00:00",
+        "views": 38
+      },
+      {
+        "brd_name_kor": "오이코스",
+        "lv_registerdate": "2021-01-04T00:00:00",
+        "views": 16
+      },
+      {
+        "brd_name_kor": "오이코스",
+        "lv_registerdate": "2021-01-07T00:00:00",
+        "views": 18
+      },
+      {
+        "brd_name_kor": "유니밋",
+        "lv_registerdate": "2020-12-22T00:00:00",
+        "views": 41
+      },
+      {
+        "brd_name_kor": "인목",
+        "lv_registerdate": "2020-12-22T00:00:00",
+        "views": 14
+      },
+      {
+        "brd_name_kor": "인목",
+        "lv_registerdate": "2021-01-03T00:00:00",
+        "views": 19
+      },
+      {
+        "brd_name_kor": "인목",
+        "lv_registerdate": "2021-01-04T00:00:00",
+        "views": 20
+      },
+      {
+        "brd_name_kor": "인목",
+        "lv_registerdate": "2021-01-05T00:00:00",
+        "views": 20
+      },
+      {
+        "brd_name_kor": "인목",
+        "lv_registerdate": "2021-01-08T00:00:00",
+        "views": 13
+      },
+      {
+        "brd_name_kor": "인목",
+        "lv_registerdate": "2021-01-09T00:00:00",
+        "views": 20
+      },
+      {
+        "brd_name_kor": "인목",
+        "lv_registerdate": "2021-01-10T00:00:00",
+        "views": 15
+      },
+      {
+        "brd_name_kor": "주세티",
+        "lv_registerdate": "2021-01-05T00:00:00",
+        "views": 12
+      },
+      {
+        "brd_name_kor": "주세티",
+        "lv_registerdate": "2021-01-06T00:00:00",
+        "views": 11
+      },
+      {
+        "brd_name_kor": "주세티",
+        "lv_registerdate": "2021-01-09T00:00:00",
+        "views": 11
+      },
+      {
+        "brd_name_kor": "주세티",
+        "lv_registerdate": "2021-01-10T00:00:00",
+        "views": 12
+      },
+      {
+        "brd_name_kor": "코난티",
+        "lv_registerdate": "2020-12-25T00:00:00",
+        "views": 36
+      },
+      {
+        "brd_name_kor": "코토데스테",
+        "lv_registerdate": "2021-01-05T00:00:00",
+        "views": 11
+      },
+      {
+        "brd_name_kor": "토탈마블",
+        "lv_registerdate": "2020-12-22T00:00:00",
+        "views": 17
+      },
+      {
+        "brd_name_kor": "토탈마블",
+        "lv_registerdate": "2020-12-25T00:00:00",
+        "views": 13
+      },
+      {
+        "brd_name_kor": "토탈마블",
+        "lv_registerdate": "2020-12-28T00:00:00",
+        "views": 12
+      },
+      {
+        "brd_name_kor": "토탈마블",
+        "lv_registerdate": "2021-01-04T00:00:00",
+        "views": 12
+      },
+      {
+        "brd_name_kor": "토탈마블",
+        "lv_registerdate": "2021-01-05T00:00:00",
+        "views": 11
+      },
+      {
+        "brd_name_kor": "페르고",
+        "lv_registerdate": "2020-12-22T00:00:00",
+        "views": 16
+      },
+      {
+        "brd_name_kor": "페르고",
+        "lv_registerdate": "2020-12-23T00:00:00",
+        "views": 13
+      },
+      {
+        "brd_name_kor": "페르고",
+        "lv_registerdate": "2020-12-30T00:00:00",
+        "views": 15
+      },
+      {
+        "brd_name_kor": "페르고",
+        "lv_registerdate": "2021-01-03T00:00:00",
+        "views": 12
+      },
+      {
+        "brd_name_kor": "페르고",
+        "lv_registerdate": "2021-01-04T00:00:00",
+        "views": 24
+      },
+      {
+        "brd_name_kor": "페르고",
+        "lv_registerdate": "2021-01-08T00:00:00",
+        "views": 13
+      },
+      {
+        "brd_name_kor": "페르고",
+        "lv_registerdate": "2021-01-09T00:00:00",
+        "views": 20
+      },
+      {
+        "brd_name_kor": "페르고",
+        "lv_registerdate": "2021-01-10T00:00:00",
+        "views": 22
+      },
+      {
+        "brd_name_kor": "포레스컬러",
+        "lv_registerdate": "2020-12-21T00:00:00",
+        "views": 39
+      },
+      {
+        "brd_name_kor": "포보",
+        "lv_registerdate": "2020-12-22T00:00:00",
+        "views": 11
+      },
+      {
+        "brd_name_kor": "포보",
+        "lv_registerdate": "2020-12-24T00:00:00",
+        "views": 13
+      },
+      {
+        "brd_name_kor": "포보",
+        "lv_registerdate": "2020-12-28T00:00:00",
+        "views": 79
+      },
+      {
+        "brd_name_kor": "포보",
+        "lv_registerdate": "2021-01-11T00:00:00",
+        "views": 11
+      },
+      {
+        "brd_name_kor": "하우스톤",
+        "lv_registerdate": "2020-12-24T00:00:00",
+        "views": 12
+      },
+      {
+        "brd_name_kor": "하우스톤",
+        "lv_registerdate": "2021-01-05T00:00:00",
+        "views": 17
+      },
+      {
+        "brd_name_kor": "하우스톤",
+        "lv_registerdate": "2021-01-06T00:00:00",
+        "views": 16
+      },
+      {
+        "brd_name_kor": "현성세라믹",
+        "lv_registerdate": "2020-12-25T00:00:00",
+        "views": 13
+      },
+      {
+        "brd_name_kor": "현성세라믹",
+        "lv_registerdate": "2021-01-03T00:00:00",
+        "views": 12
+      }
+    ]
+  }
+}
